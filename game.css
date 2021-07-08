@@ -146,15 +146,15 @@ table {
 
 @media only screen and (max-width: 501px) {
     h1{
-        font-size: 170%;
+        font-size: 200%;
     }
 
     h2{
-        font-size: 120%;
+        font-size: 200%;
     }
 
     h3{
-        font-size: 100%;
+        font-size: 150%;
     }
 
     .header{
@@ -176,7 +176,7 @@ table {
 
     .board button{
     width: 1rem;
-    height: 2rem;
+    height: 2.5rem;
 }
 
     .overlay{
