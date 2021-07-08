@@ -13,8 +13,6 @@ h1, h2, h3{
     "a a b b b b c c"
     "a a b b b b c c"
     "a a b b b b c c";
-    padding: 0;
-    margin: 0;
 }
 
 .darkmagician {
@@ -22,6 +20,7 @@ h1, h2, h3{
     background-image: url(./photo/darkmagician.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    border: 2px solid black;
 }
 
 .blueeyes {
@@ -29,12 +28,14 @@ h1, h2, h3{
     background-image: url(./photo/blueeyes.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    border: 2px solid black;
 }
 
 .container {
     grid-area: b;
     text-align: center;
     width: 100%;
+        border: 2px solid black;
 }
 
 table {
@@ -43,10 +44,21 @@ table {
 }
 
 .board button{
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     background-color: gray;
     margin: 1px;
     border: 4px solid black;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .gamecontainer{
+    grid-template-areas: 
+    "a b b b b b b c"
+    "a b b b b b b c"
+    "a b b b b b b c"
+    "a b b b b b b c";
+    }
+
 }
