@@ -61,7 +61,6 @@ h1{
     width: 100%;
     height: 100%;
     text-align: center;
-    padding-top: 10%;
 }
 
 @keyframes spinner{
@@ -123,6 +122,14 @@ table {
     width: 4.5rem;
     height: 4.5rem;
 }
+
+    .overlay{
+        padding-top: 10%;
+    }
+
+    .overlay img{
+    height: 50vh;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -138,4 +145,11 @@ table {
     width: 2.5rem;
     height: 2.5rem;
 }
+    .overlay{
+        padding-top: 30%;
+    }
+
+    .overlay img{
+    height: 30vh;
+    }
 }
