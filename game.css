@@ -161,15 +161,22 @@ table {
         padding-top: -2%;
     }
 
-    .gamecontainer{grid-template-areas: 
-    "b b b b b b b b"
-    "b b b b b b b b"
-    "b b b b b b b b"
-    "b b b b b b b b";}
+    .gamecontainer{
+    
+        height: 60vh;
+        grid-template-areas: 
+        "b b b b b b b b"
+        "b b b b b b b b"
+        "b b b b b b b b"
+        "b b b b b b b b";}
+    
+    .ending{
+        height: 30vh;
+    }
 
     .board button{
     width: 1rem;
-    height: 1.5rem;
+    height: 2rem;
 }
 
     .overlay{
