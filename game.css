@@ -143,3 +143,22 @@ table {
     height: 30vh;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .header{
+        font-size: 50%;
+    }
+
+    .board button{
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+    .overlay{
+        padding-top: 30%;
+    }
+
+    .overlay img{
+    height: 10vh;
+    }
+}

@@ -136,11 +136,11 @@ $('.board button').on('click',function() {
   // Re-Check who the current Player is.
   if (currentPlayer === 1) {
     currentName = player1;
-    $('h3').text(currentName+": it is your turn, please pick a column to drop your blue chip.");
+    $('h3').text(currentName+" turn");
     currentColor = player1Color;
   }else {
     currentName = player2
-    $('h3').text(currentName+": it is your turn, please pick a column to drop your red chip.");
+    $('h3').text(currentName+" turn");
     currentColor = player2Color;
   }
 
