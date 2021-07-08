@@ -12,6 +12,10 @@
 </head>
 
 <body>
+<div class="header">
+    <h1 class="headertext">YUGIOH Connect 4</h1>
+</div>
+
     <div class="gamecontainer">
         <div class="darkmagician">
         </div>
@@ -19,11 +23,13 @@
         <div class="blueeyes">
         </div>
 
+        <div class="overlay">
+            <img src="./photo/darkmagician.jpg" alt="" id="winner">
+        </div>
+        
         <div class="container">
-            <h1>Welcome to Connect 4</h1>
             <h2>Connect 4 chips to win!</h2>
             <h3>Lets start yo!</h3>
-
             <table class="board">
                 <tr>
                     <td><button type="button"></button></td>
@@ -82,6 +88,8 @@
             </table>
         </div>
     </div>
+
+    <div class="ending"><h1 class="endtext">.</h1></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

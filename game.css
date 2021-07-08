@@ -1,18 +1,38 @@
-h1, h2, h3{
-    margin-bottom: 1rem;
+h1{
+    margin: none;
+    color:white;
+    font-family: sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 350%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -2px 0 red, 0 2px red, 2px 0 red, 0 -2px red;
+}
 
+.header{
+    text-align: center;
+    height: 10vh;
+    background-color: #676767;
+    padding-top: 1.5vh;
+    border: 1px solid black;
+    background: url(./photo/Yugi.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 }
 
 .gamecontainer{
     display: grid;
+    height: 70vh;
+    width: 100vw;
     grid-template-columns: repeat(8,1fr);
     gap: 0px;
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
     grid-template-areas: 
-    "a a b b b b c c"
-    "a a b b b b c c"
-    "a a b b b b c c"
-    "a a b b b b c c";
+    "a b b b b b b c"
+    "a b b b b b b c"
+    "a b b b b b b c"
+    "a b b b b b b c";
+    border: 3px solid black;
 }
 
 .darkmagician {
@@ -20,6 +40,7 @@ h1, h2, h3{
     background-image: url(./photo/darkmagician.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
     border: 2px solid black;
 }
 
@@ -28,28 +49,65 @@ h1, h2, h3{
     background-image: url(./photo/blueeyes.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
     border: 2px solid black;
+
+}
+
+.overlay{ 
+    position: fixed;
+    display: inline-block;
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+@keyframes spinner{
+  25%   {transform: rotate(45deg);}
+  50%  {transform: rotate(-45deg);}
+  75%  {transform: rotate(45deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.overlay img{
+    height: 50vh;
+    animation: spinner 1s infinite linear;
+    animation-duration: 1s;
 }
 
 .container {
     grid-area: b;
     text-align: center;
     width: 100%;
-        border: 2px solid black;
+    border: 2px solid black;
+
 }
 
 table {
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 .board button{
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     background-color: gray;
     margin: 1px;
     border: 4px solid black;
     border-radius: 50%;
+}
+
+.ending{
+    background: url(./photo/Yugi.jpg);
+    height: 20vh;
+    text-align: center;
+}
+
+.endtext{
+    display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -61,4 +119,23 @@ table {
     "a b b b b b b c";
     }
 
+    .board button{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+}
+
+@media only screen and (max-width: 800px) {
+    .gamecontainer{
+    grid-template-areas: 
+    "a b b b b b b c"
+    "a b b b b b b c"
+    "a b b b b b b c"
+    "a b b b b b b c";
+    }
+
+    .board button{
+    width: 2.5rem;
+    height: 2.5rem;
+}
 }

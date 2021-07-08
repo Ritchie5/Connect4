@@ -1,5 +1,7 @@
 // We need to use jQuery for the following:
 
+var overlay = $(".overlay");
+var overlayimg = $("#winner");
 var player1 = "Dark Magician";
 var player1Color = 'rgb(86, 151, 255)';
 
@@ -92,13 +94,11 @@ function diagonalWinCheck() {
 
 // Game End
 function gameEnd(winningPlayer) {
-  for (var col = 0; col < 7; col++) {
-    for (var row = 0; row < 7; row++) {
       $('h3').fadeOut('fast');
       $('h2').fadeOut('fast');
-      $('h1').text(winningPlayer+" has won! Refresh your browser to play again!").css("fontSize", "50px")
-    }
-  }
+      $('.headertext').text(winningPlayer+" has won!");
+      $('.endtext').css("display", "inline-block");
+      $('.endtext').text("Refresh your browser to play again!");
 }
 
 // Start with Player One
@@ -122,6 +122,11 @@ $('.board button').on('click',function() {
 
   // Check for a win or a tie.
   if (horizontalWinCheck() || verticalWinCheck() || diagonalWinCheck()) {
+    if(currentName === "Blue Eye White Dragon"){
+      overlayimg.attr("src", "./photo/blueeyes.jpg");
+    }
+    overlay.css("display", "inline-block");
+
     gameEnd(currentName);
   }
 
