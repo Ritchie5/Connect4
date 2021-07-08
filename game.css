@@ -1,0 +1,52 @@
+h1, h2, h3{
+    margin-bottom: 1rem;
+
+}
+
+.gamecontainer{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 0px;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas: 
+    "a a b b b b c c"
+    "a a b b b b c c"
+    "a a b b b b c c"
+    "a a b b b b c c";
+    padding: 0;
+    margin: 0;
+}
+
+.darkmagician {
+    grid-area: a;
+    background-image: url(./photo/darkmagician.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.blueeyes {
+    grid-area: c;
+    background-image: url(./photo/blueeyes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    grid-area: b;
+    text-align: center;
+    width: 100%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.board button{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: gray;
+    margin: 1px;
+    border: 4px solid black;
+    border-radius: 50%;
+}
