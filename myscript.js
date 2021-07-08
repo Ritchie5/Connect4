@@ -107,7 +107,7 @@ var currentName = player1;
 var currentColor = player1Color;
 
 // Start with Player One
-$('h3').text(player1);
+$('h3').text(player1 + " turn");
 
 $('.board button').on('click',function() {
 
@@ -136,11 +136,11 @@ $('.board button').on('click',function() {
   // Re-Check who the current Player is.
   if (currentPlayer === 1) {
     currentName = player1;
-    $('h3').text(currentName);
+    $('h3').text(currentName + " turn");
     currentColor = player1Color;
   }else {
     currentName = player2
-    $('h3').text(currentName);
+    $('h3').text(currentName + " turn");
     currentColor = player2Color;
   }
 
