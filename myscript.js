@@ -96,9 +96,9 @@ function diagonalWinCheck() {
 function gameEnd(winningPlayer) {
       $('h3').fadeOut('fast');
       $('h2').fadeOut('fast');
-      $('.headertext').text(winningPlayer+" has won!").css("font-size","250%");
+      $('.headertext').text(winningPlayer+" has won!").css("font-size","150%");
       $('.endtext').css("display", "inline-block");
-      $('.endtext').text("Refresh your browser to play again!").css("font-size","250%");
+      $('.endtext').text("Refresh your browser to play again!").css("font-size","150%");
 }
 
 // Start with Player One
