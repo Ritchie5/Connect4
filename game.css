@@ -64,16 +64,16 @@ h1{
 }
 
 @keyframes spinner{
-  25%   {transform: rotate(45deg);}
-  50%  {transform: rotate(-45deg);}
-  75%  {transform: rotate(45deg);}
-  100% {transform: rotate(0deg);}
+  25%   {transform: rotate(-45deg);}
+  50%  {transform: rotate(45deg);}
+  75%  {transform: rotate(-45deg);}
+  100% {transform: rotate(360deg);}
 }
 
 .overlay img{
     height: 50vh;
     animation: spinner 1s infinite linear;
-    animation-duration: 1s;
+    animation-duration: 4s;
 }
 
 .container {
@@ -110,14 +110,6 @@ table {
 }
 
 @media only screen and (max-width: 1000px) {
-    .gamecontainer{
-    grid-template-areas: 
-    "a b b b b b b c"
-    "a b b b b b b c"
-    "a b b b b b b c"
-    "a b b b b b b c";
-    }
-
     .board button{
     width: 4.5rem;
     height: 4.5rem;
@@ -133,18 +125,16 @@ table {
 }
 
 @media only screen and (max-width: 800px) {
-    .gamecontainer{
-    grid-template-areas: 
-    "a b b b b b b c"
-    "a b b b b b b c"
-    "a b b b b b b c"
-    "a b b b b b b c";
+    .header{
+        font-size: 80%;
+        padding-top: 4%;
     }
 
     .board button{
     width: 2.5rem;
     height: 2.5rem;
 }
+
     .overlay{
         padding-top: 30%;
     }
